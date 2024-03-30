@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Failedprogramme.java&apos; to &apos;CucumberFullProject/src/test/java/org.stepdefinition&apos;&#x0D;&#x0A;- Original project: &apos;TestNGproject&apos;&#x0D;&#x0A;- Destination element: &apos;CucumberFullProject/src/test/java/org.stepdefinition&apos;&#x0D;&#x0A;- Original element: &apos;org.par.Failedprogramme.java&apos;" description="Copy compilation unit" destination="=CucumberFullProject/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;org.stepdefinition" element1="/src\/test\/java=/test=/true=/=/optional=/true=/=/maven.pomderived=/true=/&lt;org.par{Failedprogramme.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1711789326585" units="1" version="1.0"/>
+</session>
