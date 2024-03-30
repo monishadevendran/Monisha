@@ -1,0 +1,66 @@
+package org.stepdefinition;
+
+import org.base.BaseClass;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Bestprograme extends BaseClass{
+	
+	@Given("To Launch Edge browser and maximize windows")
+	public void to_Launch_Edge_browser_and_maximize_windows() {
+		 launchBrowser();
+		   WindowMaximize();
+	}
+
+	@When("To Launch Url browser of the ICICI bank application")
+	public void to_Launch_Url_browser_of_the_ICICI_bank_application() {
+		 launchUrl("https://www.icicibank.com/");
+	}
+
+	@When("To click the login button")
+	public void to_click_the_login_button() {
+		
+		WebElement log = driver.findElement(By.xpath("//span[text()='Login']"));
+		moveTheCursor(log);
+	}  
+
+	@When("To clickthe personal")
+	public void to_clickthe_personal() {
+		WebElement pers = driver.findElement(By.xpath("//a[text()='Personal ']"));
+		pers.click();
+	}
+
+	@When("To pass valid useridin in number field")
+	public void to_pass_valid_useridin_in_number_field() throws InterruptedException {
+		Thread.sleep(3000);
+		 WebElement user= driver.findElement(By.xpath("(//input[@type='text'])[1]")); 
+		   user.sendKeys("monisha");
+	}
+	@When("To pass valid password in password field")
+	public void to_pass_valid_password_in_password_field() {
+		 WebElement pass = driver.findElement(By.id("AuthenticationFG.ACCESS_CODE"));
+	      pass.sendKeys("688363");
+
+	}
+
+	@When("To click the login")
+	public void to_click_the_login() {
+	  WebElement okay= driver.findElement(By.id("VALIDATE_CREDENTIALS1"));
+	  okay.click();
+	   }
+
+	@When("To check whether navigate to the home or not")
+	public void to_check_whether_navigate_to_the_home_or_not() {
+		System.out.println("To check your login credentials");
+	   	}
+
+	@Then("to close browser")
+	public void to_close_browser() {
+	   closeEntireBrowser();
+	}
+
+}

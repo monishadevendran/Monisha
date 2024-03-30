@@ -1,0 +1,31 @@
+package org.stepdefinition;
+
+import org.base.BaseClass;
+import org.junit.After;
+import org.junit.Before;
+
+public class Hooksclass extends BaseClass{ 
+	@Before
+	//precondition
+	private void precondition() {
+		launchBrowser();
+		WindowMaximize();
+	}
+    @After
+    //postcondition
+    private void postcondition() {
+		closeEntireBrowser();
+	}
+}
+Scenario Outline: To validate the positive and negative combination of login functionality 
+Given user has to launch the browser and maximize the window 
+When user has to hit the myntra url 
+And user has to pass the  valid usernum"<mobilenumber>" in phone number field
+And user has to click the continue button
+Then user has to close the browser 
+
+Examples:
+    |mobilenumber |
+    |9773726489   |
+    |9847475788   |
+    |7708237747   |

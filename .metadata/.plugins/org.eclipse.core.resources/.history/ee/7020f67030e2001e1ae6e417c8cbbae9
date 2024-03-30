@@ -1,0 +1,10 @@
+Feature:To validate the login functionality of myntra application
+
+Scenario:To validate login with valid phonenum
+Given To Launch Edge browser and maximize windows
+When To Launch Url browser of the myntra application
+And To pass valid usernumber in phone number field
+And To click the continue button 
+And To check whether navigate to the home or not
+Then to close browser
+

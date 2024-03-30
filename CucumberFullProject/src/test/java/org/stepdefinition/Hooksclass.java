@@ -1,0 +1,40 @@
+package org.stepdefinition;
+
+import org.base.BaseClass;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
+public class Hooksclass extends BaseClass{ 
+	
+	@Before(order=1)
+	//precondition
+	private void precondition2() {
+		launchBrowser();
+		System.out.println("Launch browser");
+	}
+	@Before(order=2)
+	//precondition
+	private void precondition3() {
+		WindowMaximize();
+		System.out.println("max the window");
+	}
+	@Before(order =3)
+	//precondition
+	private void precondition1() throws InterruptedException {
+		Thread.sleep(3000);
+		System.out.println("precondition 3");
+	}
+    @After(order=10, value="@smoke")
+    //postcondition
+    private void postcondition2() {
+		System.out.println("take screenshot of scenerio");
+	}
+    
+    @After(order=4)
+    //postcondition
+    private void postcondition1() {
+		closeEntireBrowser();
+		System.out.println("close the browser");
+	}
+}

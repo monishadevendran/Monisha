@@ -1,0 +1,40 @@
+package org.stepdefinition;
+
+import cucumber.api.java.en.Given;
+
+public class Fruits {
+	@Given("To Launch Edge browser and maximize windows")
+	public void to_Launch_Edge_browser_and_maximize_windows() {
+	    
+	}
+
+	@When("To Launch Url browser of the myntra application")
+	public void to_Launch_Url_browser_of_the_myntra_application() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("To pass valid usernumber in phone number field")
+	public void to_pass_valid_usernumber_in_phone_number_field() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("To click the continue button")
+	public void to_click_the_continue_button() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("To check whether navigate to the home or not")
+	public void to_check_whether_navigate_to_the_home_or_not() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("to close browser")
+	public void to_close_browser() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+}

@@ -1,0 +1,20 @@
+package org.sam;
+
+public class Fbloginpojosample extends BaseClass{
+public static void main(String[] args) {
+	
+	launchBrowser();
+	launchUrl("https://en-gb.facebook.com/");
+	WindowMaximize();
+	
+	//tends fblogin kuduka mudiyathu becz already base class kuduthutom ..so namma andha fblogin pase la irunthu edhuthu object create panitom)
+	Fbloginpojo f = new Fbloginpojo();
+	passText("selenium", f.getEmail());
+	passText("Inmakes", f.getPassword());
+	
+	driver.navigate().refresh();
+	
+	passText("bhavin", f.getEmail());
+	passText("bhavin1506l",f.getPassword());
+}
+}
